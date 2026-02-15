@@ -460,17 +460,26 @@ fieldset legend {
   /* ======================
      BLOG
   ====================== */
-
-  .blog-main-container {
-    grid-template-columns: 3fr 1fr;
+.blog-main-container .contenido-principal {
+    display: block;
   }
 
-  .blog-item {
-    grid-template-columns: 1fr 2fr;
+   .blog-listado {
+    grid-column: 1 / 2;
   }
+
+  .sidebar {
+    grid-column: 2 / 3;
+  }
+
+.blog-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
 
   .blog-item img {
-    width: 150px;
     height: 120px;
   }
 
