@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muy Celina | Blog personal</title>
+
+    <!-- Descripción SEO -->
+    <meta name="description" content="Muy Celina es un espacio personal sobre creatividad, proyectos, comunicación y aprendizaje continuo.">
+
+       
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- link de BOOSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+</head>
+
+<body class="home">
+
+    <!-- ===== HEADER ===== -->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+        
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo-muycelina-horizontal-sin-fondo.png"
+             alt="Logo Muy Celina"
+            class="logo">
+        </a>
+
+        <!-- Botón hamburguesa (mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+    </header>
+
+<!-- CAROUSEL -->
+ <section>
+    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+            <div class="carousel-item active">
+            <img src="img/carousel-contacto-header-muycelina.png" class="d-block w-100" alt="contacto muy celina">
+            </div>
+
+            <div class="carousel-item">
+            <img src="img/carousel-shootings-header-muycelina.png" class="d-block w-100" alt="Sesiones de fotos muy celina">
+            </div>
+
+            <div class="carousel-item">
+            <img src="img/carousel-blog-muycelina.png" class="d-block w-100" alt="Blog muy celina">
+    </div>
+
+    </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+    
+</section>
+
+        <!--  MAIN  -->
+    <main>
+        <div class="container-fluid px-3">
+            <div class="row">
+
+            <!-- COLUMNA 1: Texto -->
+            <div class="col-12 col-lg-4">
+                <section class="contenido-principal">
+                <article class="bienvenida">
+                    <h1>Bienvenido a Muy Celina</h1>
+
+                    <p>
+                    Muy Celina es un espacio personal donde comparto ideas, aprendizajes
+                    y proyectos vinculados a la creatividad, la comunicación y el desarrollo
+                    personal y profesional.
+                    </p>
+
+                    <p>
+                    Este sitio nace como parte de mi proceso de formación en desarrollo web,
+                    pero también como un lugar para experimentar, crear y documentar
+                    lo que voy aprendiendo en el camino.
+                    </p>
+                </article>
+                </section>
+            </div>
+
+            <!-- COLUMNA 2: Imagen -->
+            <div class="col-12 col-lg-4 text-center">
+                <figure class="imagen-destacada">
+                <img src="img/logo-muycelina.png"
+                    alt="logo de Muy Celina"
+                    class="img-fluid">
+                </figure>
+            </div>
+
+            <!-- COLUMNA 3: Sidebar -->
+            <div class="col-12 col-lg-4">
+                <aside class="sidebar">
+                <h3>Posts recientes</h3>
+
+                <ul class="lista-posts">
+                    <li><a href="#">Cómo empecé a aprender desarrollo web</a></li>
+                    <li><a href="#">Organizar ideas antes de programar</a></li>
+                    <li><a href="#">Errores comunes al empezar en HTML</a></li>
+                    <li><a href="#">Creatividad aplicada a proyectos digitales</a></li>
+                    <li><a href="#">Mi proceso de aprendizaje paso a paso</a></li>
+                </ul>
+                </aside>
+            </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!--  FOOTER  -->
+    <footer id="contacto">
+
+        <div class="container footer-container">
+
+            <section><img src="img/muycelina-foto-perfil.png" alt="foto de perfil muy celina" class="foto-perfil"></section>
+
+            <section class="footer-cta">
+                <h2>Sigamos en contacto</h2>
+                <p>
+                    Si te interesa mi proceso, mis proyectos o simplemente charlar
+                    sobre ideas y aprendizaje, podés encontrarme en estos espacios.
+                </p>
+            </section>
+
+
+            <!-- Información de contacto -->
+            <section class="footer-contacto">
+
+                <ul class="contacto-lista">
+                    <li>
+                        <strong>Instagram:</strong>
+                        <a href="https://www.instagram.com/muycelina" target="_blank" rel="noopener noreferrer">
+                            @muycelina
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            Celina Gómez Sadir
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:muycelina@gmail.com">
+                            muycelina@gmail.com
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Derechos -->
+            <section class="footer-legal">
+                <p>
+                    © 2026 Muy Celina. Todos los derechos reservados.
+                </p>
+            </section>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
