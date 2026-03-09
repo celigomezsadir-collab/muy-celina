@@ -1,0 +1,105 @@
+@use "../abstracts/variables" as *;
+@use "../components/buttons" as *;
+
+.contact {
+
+  padding: 3rem 1rem;
+  background-color: $color-fondo;
+
+  .main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.contact__form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  background: $color-principal;
+  padding: 2.5rem;
+  border-radius: 25px;
+
+  h3 {
+    color: $color-blanco;
+  }
+
+  /* Inputs */
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border-radius: 20px;
+    border: none;
+
+    background: $color-blanco;
+    color: $color-texto;
+
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Textarea tamaño */
+
+  textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  /* Fieldset */
+
+  fieldset {
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 15px;
+    padding: 1rem 1.2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+
+      color: $color-blanco;
+      font-weight: 400;
+    }
+  }
+
+  /* Labels generales */
+
+  label {
+    color: $color-blanco;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  /* Botón */
+
+  button {
+    align-self: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.campo-form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  label {
+    color: $color-blanco;
+    font-weight: 500;
+  }
+}
+

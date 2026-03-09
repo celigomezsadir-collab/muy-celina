@@ -1,0 +1,45 @@
+// Animación fade in
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Animación slide up
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animación escala suave
+@keyframes scale-in {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.anim-fade {
+  animation: fade-in 0.8s ease forwards;
+}
+
+.anim-slide-up {
+  animation: slide-up 0.8s ease forwards;
+}
+
+.anim-scale {
+  animation: scale-in 0.5s ease forwards;
+}

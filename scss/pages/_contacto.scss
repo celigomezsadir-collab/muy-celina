@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as *; 
+
+.contacto {
+
+  padding: $spacing-md;
+
+  .main-container {
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+  }
+}
+
+  .campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+
+/* MEDIA QUERY */
+
+@mixin tablet {
+
+  .contacto .main-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+}

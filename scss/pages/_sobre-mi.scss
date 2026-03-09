@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *; 
+
+.sobre-mi {
+
+  padding: $spacing-md;
+
+  &__container {
+  max-width: 900px;
+  margin: 0 auto;
+  }
+
+  &__text {
+    line-height: 1.6;
+  }
+
+  h1{
+    margin-bottom: 2rem;
+  }
+
+  h2{
+    margin-bottom: 1rem;
+  }
+
+  img {
+  border-radius: $border-radius-md;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  }
+
+}
