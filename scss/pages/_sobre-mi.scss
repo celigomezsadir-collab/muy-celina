@@ -3,11 +3,12 @@
 
 .sobre-mi {
 
-  padding: $spacing-xl $spacing-md;
+  padding: $spacing-lg $spacing-md;
 
   &__container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
   }
 
   &__text {

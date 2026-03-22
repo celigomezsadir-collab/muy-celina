@@ -699,11 +699,12 @@ header .navbar .nav-link.active {
 }
 
 .sobre-mi {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
 }
 .sobre-mi__container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 1rem;
+  padding: 1rem;
 }
 .sobre-mi__text {
   line-height: 1.6;
