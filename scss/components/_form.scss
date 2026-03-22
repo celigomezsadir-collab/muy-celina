@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  box-sizing: border-box;
 
   background: $color-principal;
   padding: 2.5rem;
@@ -32,7 +33,7 @@
 
   /* Inputs */
 
-  input,
+  input:not([type="radio"]),
   textarea {
     width: 100%;
     padding: 12px 14px;
@@ -61,16 +62,33 @@
     padding: 1rem 1.2rem;
 
     display: flex;
-    flex-wrap: wrap;
-    gap: 0;
+    flex-direction: column; 
+    gap: 0.8rem;
 
     label {
       display: flex;
-      flex-wrap: wrap;
-      gap: .5rem;
+      align-items: center; 
+      gap: 0.5rem;
 
       color: $color-blanco;
       font-weight: 400;
+    }
+
+    .radio-option {
+    display: flex;
+    align-items: center; 
+    gap: 0.6rem;
+    width: 100%;
+
+    color: $color-blanco;
+    font-weight: 400;
+
+    cursor: pointer; 
+    }   
+
+    .radio-option input {
+    margin: 0; 
+    flex-shrink: 0; 
     }
   }
 

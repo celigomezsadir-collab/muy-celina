@@ -1,11 +1,12 @@
 @use "../abstracts/variables" as *; 
+@use "../abstracts/mixins" as mixins;
 
 .sobre-mi {
 
-  padding: $spacing-md;
+  padding: $spacing-xl $spacing-md;
 
   &__container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   }
 
@@ -13,11 +14,11 @@
     line-height: 1.6;
   }
 
-  h1{
+  h1 {
     margin-bottom: 2rem;
   }
 
-  h2{
+  h2 {
     margin-bottom: 1rem;
   }
 
