@@ -1,0 +1,1 @@
+Recoleta es una tipografía comercial. Si tenés licencia, agregá Recoleta-Regular.woff2 y Recoleta-Medium.woff2 en esta carpeta. No se incluyen archivos de fuentes comerciales. Inter se carga desde Google Fonts.
