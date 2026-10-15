@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33440396/README.md)
 # Muy Celina — Sitio web v1
 
 ## Cómo abrir
