@@ -1,0 +1,28 @@
+/* Muy Celina · What's in my bag · Sección independiente */
+.mc-bag { background: #850024; color: #f4e9dc; padding: clamp(44px,6vw,90px) 0 0; overflow: hidden; isolation: isolate; }
+.mc-bag * { box-sizing: border-box; }
+.mc-bag__heading { text-align: center; padding: 0 20px 22px; }
+.mc-bag__eyebrow { font: 700 11px/1.4 Arial,sans-serif; letter-spacing: .3em; text-transform: uppercase; color: #ffb4ce; }
+.mc-bag__title { margin: 12px 0 0; font-family: Georgia,serif; font-weight: 400; font-size: clamp(40px,6vw,84px); line-height: .98; letter-spacing: -.055em; }
+.mc-bag__title em { color: #ffb4ce; font-weight: 400; }
+.mc-bag__stage { position: relative; width: min(100%, 1600px); aspect-ratio: 1366 / 720; margin: 0 auto; }
+.mc-bag__silk { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; user-select: none; }
+.mc-bag__item { position: absolute; display: block; padding: 0; margin: 0; border: 0; background: none; cursor: pointer; z-index: 2; transform: rotate(var(--rot,0deg)); transition: transform .28s ease, filter .28s ease; -webkit-tap-highlight-color: transparent; }
+.mc-bag__item:hover, .mc-bag__item:focus-visible { z-index: 20; transform: rotate(var(--rot,0deg)) scale(1.15); filter: drop-shadow(0 12px 12px rgba(54,14,20,.25)); outline: none; }
+.mc-bag__item:focus-visible { outline: 2px solid #ffb4ce; outline-offset: 3px; }
+.mc-bag__item img { display: block; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+.mc-bag__label { position: absolute; left: 50%; bottom: -3px; transform: translate(-50%, 12px); padding: 7px 12px; border-radius: 2px; background: #fff9f2; color: #850024; white-space: nowrap; font: 700 clamp(10px,1.05vw,14px)/1.2 Arial,sans-serif; box-shadow: 0 6px 18px #4b001a33; opacity: 0; pointer-events: none; transition: opacity .22s ease, transform .22s ease; }
+.mc-bag__item:hover .mc-bag__label, .mc-bag__item:focus-visible .mc-bag__label, .mc-bag__item.is-active .mc-bag__label { opacity: 1; transform: translate(-50%,0); }
+/* Los PNG tienen margen transparente: cada caja posiciona el PNG completo. */
+.mc-bag__item--bolso { left: -15%; top: -10%; width: 45%; height: 108%; --rot: -5deg; z-index: 4; }
+.mc-bag__item--anteojos { left: 13%; top: 12%; width: 20%; height: 32%; --rot: 10deg; }
+.mc-bag__item--airpods { left: 31%; top: 8%; width: 13%; height: 30%; }
+.mc-bag__item--notebook { left: 31%; top: 27%; width: 34%; height: 50%; --rot: 4deg; z-index: 3; }
+.mc-bag__item--iphone { left: 62%; top: 18%; width: 15%; height: 43%; --rot: -9deg; }
+.mc-bag__item--perfume { left: 79%; top: 8%; width: 12%; height: 39%; --rot: 11deg; }
+.mc-bag__item--stanley { left: 21%; top: 48%; width: 17%; height: 51%; --rot: -7deg; z-index: 5; }
+.mc-bag__item--microfono { left: 47%; top: 69%; width: 13%; height: 28%; }
+.mc-bag__item--scrunchie { left: 63%; top: 62%; width: 17%; height: 30%; --rot: 12deg; }
+.mc-bag__item--labial { left: 76%; top: 55%; width: 13%; height: 31%; --rot: -8deg; }
+@media (max-width: 700px) { .mc-bag { padding-top: 42px; } .mc-bag__heading { padding-bottom: 18px; } .mc-bag__stage { width: 155%; margin-left: -28%; } .mc-bag__label { font-size: 10px; padding: 5px 7px; } .mc-bag__item:hover { transform: rotate(var(--rot,0deg)) scale(1.08); } }
+@media (prefers-reduced-motion: reduce) { .mc-bag__item, .mc-bag__label { transition: none; } }
