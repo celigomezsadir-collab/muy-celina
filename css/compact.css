@@ -1,0 +1,58 @@
+/* Muy Celina · escala editorial compacta, noviembre 2026 */
+@media (min-width: 721px) {
+  .topbar { height: 70px; }
+  .brand img { max-height: 45px; }
+  .hero, .hero-grid { min-height: 0; height: min(690px, calc(100svh - 70px)); min-height: 480px; }
+  .hero-copy { padding-top: clamp(26px, 5vh, 58px); padding-bottom: 25px; display:flex; flex-direction:column; justify-content:center; }
+  .hero h1 { font-size: clamp(3.25rem, 5.3vw, 6.3rem); margin: 16px 0 15px; line-height: .98; }
+  .hero-desc { font-size: 1rem; line-height:1.45; }
+  .hero-actions { margin-top: 24px; }
+  .hero-bottom { margin-top: 30px; }
+  .hero-media { min-height: 0; height:100%; }
+  .section { padding-top: 60px; padding-bottom: 65px; }
+  .section-heading { margin-bottom: 24px; }
+  .section-heading h2 { font-size: clamp(2.8rem, 4.3vw, 5rem); }
+  .service-panel { padding: 32px; }
+  .service-panel h3 { font-size: clamp(2rem, 3.2vw, 3.8rem); }
+  .pj-hero { padding: 20px 0 44px; }
+  .pj-hero .pj-eyebrow { margin: 38px 0 14px; }
+  .pj-hero h1 { font-size: clamp(3rem, 5.5vw, 6.4rem); }
+  .pj-hero__bottom { margin-top: 34px; }
+  .pj-index { padding: 55px 0 75px; }
+  .pj-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 38px 22px; }
+  .pj-card__image { aspect-ratio: 1.45; }
+  .pj-card h2 { font-size: clamp(1.8rem, 2.6vw, 3rem); }
+  .pj-card__meta { margin: 12px 0 8px; font-size: .58rem; }
+  .pj-card p { font-size: .87rem; margin-bottom: 13px; }
+  .pj-card__arrow { width: 38px; height: 38px; }
+  .pj-case-hero { padding-bottom: 50px; }
+  .pj-case-hero .pj-eyebrow { margin-top: 45px; }
+  .pj-case-hero h1 { font-size: clamp(3.2rem, 5.8vw, 6.6rem); }
+  .pj-case-art { padding-top: 45px; }
+  .pj-case-details { padding: 65px 0 75px; }
+  .pj-case-layout h2 { font-size: clamp(2.7rem, 4.4vw, 5rem); }
+  .svc-hero__content { padding: 48px 0 56px; }
+  .svc-hero h1 { font-size: clamp(3.6rem, 6vw, 7rem); }
+  .svc-services { padding: 65px 0 75px; }
+  .svc-heading h2 { font-size: clamp(2.8rem, 4.4vw, 5.1rem); }
+  .svc-tab { min-height: 70px; }
+  .svc-panel { min-height: 0; padding: clamp(24px, 3.3vw, 48px); }
+  .svc-panel__intro h2 { font-size: clamp(2.5rem, 3.6vw, 4.3rem); margin: 12px 0 18px; }
+  .svc-panel__details { gap: 15px; }
+  .svc-detail { padding-bottom: 12px; }
+  .svc-custom { padding: 65px 0 75px; }
+  .svc-custom h2 { font-size: clamp(3rem, 4.8vw, 5.5rem); }
+}
+@media (min-width: 721px) and (max-width: 1080px) {
+ .pj-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .hero h1 { font-size: clamp(3rem, 5.4vw, 5rem); }
+}
+@media (max-width: 720px) {
+ .pj-grid { gap: 32px 16px; }
+ .pj-card h2 { font-size: clamp(2rem, 8vw, 3rem); }
+ .pj-card__image { aspect-ratio: 1.25; }
+ .pj-index { padding: 55px 0 65px; }
+ .pj-hero .pj-eyebrow { margin-top: 40px; }
+ .pj-hero__bottom { margin-top: 32px; }
+ .svc-services { padding: 55px 0; }
+}
