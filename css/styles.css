@@ -401,22 +401,20 @@ img {
     box-shadow: 0 14px 35px rgba(0, 0, 0, .12)
 }
 
-.service-sticker {
+.service-visual .service-sticker {
     position: absolute;
     right: 0;
     top: 0;
     transform: rotate(10deg);
-    border-radius: 50%;
     width: 115px;
+    height: 115px;
     aspect-ratio: 1;
-    background: var(--pink);
-    color: var(--burgundy);
-    display: grid;
-    place-items: center;
-    text-align: center;
-    font: 600 .67rem/1.3 var(--sans);
-    letter-spacing: .12em;
-    text-transform: uppercase
+    object-fit: contain;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .service-controls {
@@ -836,9 +834,9 @@ img {
         height: 240px
     }
 
-    .service-sticker {
-        width: 75px;
-        font-size: .47rem
+    .service-visual .service-sticker {
+        width: 85px;
+        height: 85px;
     }
 
     .project-track {
