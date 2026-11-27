@@ -34,7 +34,7 @@
 }
 
 .alem-section {
-    padding-block: clamp(2.8rem, 7vw, 6rem);
+    padding-block: var(--project-section-space);
     scroll-margin-top: 6rem;
 }
 
@@ -49,7 +49,7 @@
 .alem-section h2 {
     font-size: clamp(2.25rem, 5vw, 4.25rem);
     line-height: 1.05;
-    margin-bottom: .65em;
+    margin: 0 0 var(--project-title-gap);
 }
 
 .alem-section p {
@@ -137,8 +137,12 @@
     aspect-ratio: 4 / 3;
 }
 
-.alem-case figcaption {
-    padding: .4rem 0;
+.alem-case .gallery-item {
+    color: var(--burgundy);
+}
+
+.alem-case .gallery-item :is(img, video) {
+    border-radius: 0;
 }
 
 .alem-play {
@@ -176,7 +180,7 @@
 
 /* Dirección editorial del caso Alem */
 .alem-case .pj-case-hero {
-    padding-block: clamp(3rem, 7vw, 7rem);
+    padding-block: clamp(2rem, 4.5vw, 4.25rem);
     background-color: var(--paper);
     color: var(--burgundy);
     background-image:
@@ -304,24 +308,6 @@
     padding: .35rem .25rem .8rem;
 }
 
-#contenidos figure {
-    background: var(--paper);
-    color: var(--burgundy);
-    padding: .45rem;
-    border-radius: 1rem;
-}
-
-#contenidos figure:nth-child(even) {
-    background: var(--pink);
-}
-
-#contenidos figcaption {
-    min-height: 2.5em;
-    text-align: left;
-    padding-inline: .4rem;
-    font-weight: 600;
-}
-
 .alem-play {
     border: 1px solid var(--burgundy);
     box-shadow: 2px 2px 0 var(--burgundy);
@@ -335,14 +321,6 @@
     background: var(--pink);
 }
 
-#eventos .alem-gallery {
-    margin: .45rem;
-    padding: clamp(.8rem, 2vw, 1.5rem);
-    background: var(--paper);
-    border: 1px solid var(--burgundy);
-    box-shadow: 6px 6px 0 var(--burgundy);
-}
-
 #eventos .alem-track {
     gap: 0;
 }
@@ -353,11 +331,6 @@
 
 #eventos figure img {
     object-fit: cover;
-}
-
-#eventos figcaption {
-    font-family: var(--serif);
-    font-size: 1.35rem;
 }
 
 #alianzas,
@@ -406,6 +379,7 @@
 .alem-hero-copy .pj-back {
     margin-top: 0;
 }
+
 .alem-resource {
     display: flex;
     flex-wrap: wrap;

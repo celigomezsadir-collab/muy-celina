@@ -81,6 +81,7 @@ img {
     font-size: .71rem;
     letter-spacing: .31em;
     font-weight: 600;
+    padding: 10px;
 }
 
 .button {
@@ -295,9 +296,11 @@ img {
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
     & h2 {
         font-size: clamp(3.5rem, 5.3vw, 6.4rem);
         margin: 13px 0 0;
+        padding: 20px 0;
     }
     & p {
         max-width: 400px;
@@ -883,3 +886,22 @@ img {
         }
     }
 }
+
+:root {
+    --card-radius: 16px;
+}
+
+.card-link {
+    border: 1px solid var(--burgundy);
+    border-radius: var(--card-radius);
+    background: var(--paper);
+}
+
+.gallery-item {
+    border: 0;
+    border-radius: var(--card-radius);
+    background: var(--paper);
+    box-shadow: none;
+    overflow: hidden;
+}
+

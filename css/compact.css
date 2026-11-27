@@ -53,11 +53,12 @@
   }
 
   .section-heading {
-    margin-bottom: 24px;
+    margin: 24px;
   }
 
   .section-heading h2 {
     font-size: clamp(2.8rem, 4.3vw, 5rem);
+    margin-top: 12px;
   }
 
   .service-panel {
@@ -234,4 +235,16 @@ main > section {
 
 main h2 {
     margin-block: 0 var(--h2-space) !important;
+}
+
+/* Separación entre el hero y Servicios */
+section#servicios {
+    padding-top: clamp(44px, 4.5vw, 64px);
+}
+
+@media (min-width: 721px) {
+    #servicios .service-tab[aria-selected="true"] {
+        transform: none;
+        min-height: 83px;
+    }
 }

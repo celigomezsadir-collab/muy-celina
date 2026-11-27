@@ -103,7 +103,8 @@
 
 .pj-card {
     display: block;
-    min-width: 0
+    min-width: 0;
+    overflow: hidden
 }
 
 .pj-card__image {
@@ -125,18 +126,18 @@
     transform: scale(1.045)
 }
 
-.pj-card__arrow {
-    position: absolute;
-    right: 18px;
-    top: 18px;
-    background: var(--cream);
-    color: var(--burgundy);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 1.5rem
+.pj-card__body {
+    padding: 0 clamp(14px, 2vw, 24px) 20px
+}
+
+.pj-card__heading {
+    padding: 0;
+    margin-bottom: 12px
+}
+
+.pj-card__heading h2 {
+    min-width: 0;
+    overflow-wrap: anywhere
 }
 
 .pj-card__meta {
@@ -153,7 +154,7 @@
 .pj-card h2 {
     font: 400 clamp(2.5rem, 4.2vw, 5rem)/1 var(--serif);
     letter-spacing: -.05em;
-    margin: 0 0 12px
+    margin: 0
 }
 
 .pj-card p {

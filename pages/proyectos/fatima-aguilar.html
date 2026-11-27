@@ -11,6 +11,7 @@
     <link href="../../css/styles.css" rel="stylesheet" />
     <link href="../../css/proyectos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/compact.css">
+    <link rel="stylesheet" href="../../css/casos-proyectos.css">
 </head>
 
 <body>
@@ -25,14 +26,29 @@
                 href="../../pages/contacto.html">Hablemos →</a>
         </div>
     </header>
-    <main>
+    <main class="project-case">
         <section class="pj-case-hero">
+            <div class="container project-hero-grid">
+                <div>
+                    <a class="pj-back" href="../proyectos.html">Volver a Proyectos</a>
+                    <p class="pj-eyebrow">BRANDING &amp; SOCIAL MEDIA</p>
+                    <h1>Fátima Aguilar</h1>
+                    <p class="pj-case-hero__intro">Construir una identidad desde cero.</p>
+                </div>
+                <div class="project-cover">
+                    <figure><img alt="Material visual de Fátima Aguilar" loading="eager"
+                        src="../../assets/images/proyectos/fatima-aguilar.png" /></figure>
+                    <img class="project-sticker" src="../../assets/images/mc-sticker.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="project-index-band">
+            <nav class="container project-index" aria-label="En esta página">
+                <a href="#resultados">Resultados y aprendizajes</a> <a href="#desafio">El desafío</a> <a href="#mi-aporte">Mi participación</a> <a href="#solucion">La solución</a> <a href="#proxima-etapa">Próxima etapa</a>
+            </nav>
+        </div>
+        <div class="project-facts">
             <div class="container">
-                <div class="pj-kicker"><span>MUY CELINA® / CASO DE ESTUDIO</span><span>02 / 08</span></div><a
-                    class="pj-back" href="../proyectos.html">← VOLVER A PROYECTOS</a>
-                <p class="pj-eyebrow">BRANDING &amp; SOCIAL MEDIA / SELECTED WORK</p>
-                <h1>Fátima Aguilar.</h1>
-                <p class="pj-case-hero__intro">Construir una identidad desde cero.</p>
                 <div class="pj-case-facts">
                     <div><small>SERVICIOS</small><strong>Identidad visual · Manual de marca · Social Media</strong>
                     </div>
@@ -40,53 +56,42 @@
                     <div><small>ESTADO</small><strong>Proyecto finalizado</strong></div>
                 </div>
             </div>
-        </section>
-        <section class="pj-case-art">
+        </div>
+        <section class="project-chapter project-results" id="resultados">
             <div class="container">
-                <figure><img alt="Material visual de Fátima Aguilar" loading="eager"
-                        src="../../assets/images/proyectos/fatima-aguilar.png" />
-                    <figcaption>Material visual del proyecto · Se pueden incorporar fotos, videos y capturas reales.
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-        <section class="pj-case-details">
-            <div class="container pj-case-layout">
-                <div><span class="pj-eyebrow">EL PROYECTO</span>
-                    <h2>Fátima Aguilar</h2>
-                    <div class="pj-tags"><span>Identidad visual</span><span>Manual de marca</span><span>Social
-                            Media</span></div>
-                </div>
-                <div class="pj-detail-list">
-                    <article><span>01 / EL DESAFÍO</span>
-                        <p>Crear una identidad reconocible y una presencia digital para una profesional de estética que
-                            comenzaba con una cuenta prácticamente vacía.</p>
-                    </article>
-                    <article><span>02 / MI PARTICIPACIÓN</span>
-                        <p>Desarrollo de logo, sistema visual y manual de marca; planificación y producción de
-                            contenidos, copys y edición de videos.</p>
-                    </article>
-                    <article><span>03 / LA SOLUCIÓN</span>
-                        <p>Diseñé la identidad completa y un sistema de contenidos informativos, adaptado a las
-                            preferencias de la clienta y a la producción remota de materiales.</p>
-                    </article>
-                    <article><span>04 / RESULTADOS Y APRENDIZAJES</span>
-                        <p>Crecimiento orgánico aproximado desde 10–12 hasta 419 seguidores durante la colaboración, sin
+                <h2>Resultados y aprendizajes</h2>
+                <dl>
+                    <div><dt>Seguidores al cierre de la colaboración</dt><dd><span data-count="419" aria-hidden="true">419</span><span class="project-stat-text">419</span></dd></div>
+                </dl>
+                <p>Crecimiento orgánico aproximado desde 10–12 hasta 419 seguidores durante la colaboración, sin
                             campañas pagas.</p>
-                    </article>
-                    <article><span>05 / PRÓXIMA ETAPA</span>
-                        <p>Caso cerrado. La galería mostrará el manual de marca, el feed y piezas de contenido.</p>
-                    </article>
-                </div>
             </div>
         </section>
-        <section class="pj-case-gallery">
-            <div class="container">
-                <p class="pj-eyebrow">EL PROYECTO EN IMÁGENES</p>
-                <div class="pj-gallery-grid">
-                    <div class="pj-gallery-placeholder">IMAGEN / CAPTURA / REEL 01</div>
-                    <div class="pj-gallery-placeholder">IMAGEN / CAPTURA / REEL 02</div>
-                </div>
+        <section class="project-chapter" id="desafio">
+            <div class="container project-chapter-grid">
+                <h2>El desafío</h2>
+                <div><p>Crear una identidad reconocible y una presencia digital para una profesional de estética que
+                            comenzaba con una cuenta prácticamente vacía.</p></div>
+            </div>
+        </section>
+        <section class="project-chapter" id="mi-aporte">
+            <div class="container project-chapter-grid">
+                <h2>Mi participación</h2>
+                <div><p>Desarrollo de logo, sistema visual y manual de marca; planificación y producción de
+                            contenidos, copys y edición de videos.</p></div>
+            </div>
+        </section>
+        <section class="project-chapter" id="solucion">
+            <div class="container project-chapter-grid">
+                <h2>La solución</h2>
+                <div><p>Diseñé la identidad completa y un sistema de contenidos informativos, adaptado a las
+                            preferencias de la clienta y a la producción remota de materiales.</p></div>
+            </div>
+        </section>
+        <section class="project-chapter" id="proxima-etapa">
+            <div class="container project-chapter-grid">
+                <h2>Próxima etapa</h2>
+                <div><p>Caso cerrado. La galería mostrará el manual de marca, el feed y piezas de contenido.</p></div>
             </div>
         </section>
         <section class="pj-next">
@@ -112,6 +117,7 @@
         </div>
     </footer>
     <script defer="" src="../../js/main.js"></script>
+    <script src="../../js/casos-proyectos.js" defer></script>
 </body>
 
 </html>

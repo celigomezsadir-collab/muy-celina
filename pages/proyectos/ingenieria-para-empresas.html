@@ -12,6 +12,7 @@
     <link href="../../css/styles.css" rel="stylesheet" />
     <link href="../../css/proyectos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/compact.css">
+    <link rel="stylesheet" href="../../css/casos-proyectos.css">
 </head>
 
 <body>
@@ -26,20 +27,28 @@
                 href="../../pages/contacto.html">Hablemos →</a>
         </div>
     </header>
-    <main>
+    <main class="project-case">
         <section class="pj-case-hero">
-            <div class="container">
-                <div class="pj-kicker"><span>MUY CELINA® / CASO DE ESTUDIO</span><span>03 / 08</span></div><a
-                    class="pj-back" href="../proyectos.html">← VOLVER A PROYECTOS</a>
-                <p class="pj-eyebrow">COMUNICACIÓN B2B / SELECTED WORK</p>
-                <h1>Ingeniería para Empresas.</h1>
-                <p class="pj-case-hero__intro">Transformar proyectos técnicos en una identidad digital.</p>
-                <div class="pj-case-facts">
-                    <div><small>SERVICIOS</small><strong>Identidad visual · Manual de marca · Social Media</strong>
-                    </div>
-                    <div><small>PERÍODO</small><strong>Junio – Diciembre 2025</strong></div>
-                    <div><small>ESTADO</small><strong>Proyecto finalizado</strong></div>
+            <div class="container project-hero-grid">
+                <div>
+                    <a class="pj-back" href="../proyectos.html">Volver a Proyectos</a>
+                    <p class="pj-eyebrow">COMUNICACIÓN B2B</p>
+                    <h1>Ingeniería para Empresas</h1>
+                    <p class="pj-case-hero__intro">Transformar proyectos técnicos en una identidad digital.</p>
                 </div>
+                <div class="project-cover">
+                    <figure><img src="../../assets/images/proyectos/ingenieria-para-empresas.jpg" alt="Portada de Ingeniería para Empresas"></figure>
+                    <img class="project-sticker" src="../../assets/images/mc-sticker.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="project-index-band">
+            <nav class="container project-index" aria-label="En esta página">
+                <a href="#resultados">Resultados y aprendizajes</a> <a href="#desafio">El desafío</a> <a href="#mi-aporte">Mi participación</a> <a href="#solucion">La solución</a> <a href="#proxima-etapa">Próxima etapa</a>
+            </nav>
+        </div>
+        <div class="project-facts">
+            <div class="container">
                 <div class="pj-case-facts">
                     <div><small>SERVICIOS</small><strong>Estrategia editorial · Diseño · Copywriting · Social
                             Media</strong></div>
@@ -47,63 +56,43 @@
                     <div><small>ESTADO</small><strong>Proyecto en curso</strong></div>
                 </div>
             </div>
-        </section>
-        <section class="pj-case-art">
+        </div>
+        <section class="project-chapter project-results" id="resultados">
             <div class="container">
-                <figure>
-                    <div class="pj-case-placeholder"><span>MUY CELINA® / CASO DE ESTUDIO</span><strong>Ingeniería para
-                            Empresas</strong><span>PORTADA · ESPACIO PARA MATERIAL REAL</span></div>
-                    <figcaption>Material visual del proyecto · Se pueden incorporar fotos, videos y capturas reales.
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-        <section class="pj-case-details">
-            <div class="container pj-case-layout">
-                <div><span class="pj-eyebrow">EL PROYECTO</span>
-                    <h2>Ingeniería para Empresas</h2>
-                    <div class="pj-tags"><span>Estrategia
-                            editorial</span><span>Diseño</span><span>Copywriting</span><span>Social Media</span></div>
-                </div>
-                <div class="pj-detail-list">
-                    <article><span>01 / EL DESAFÍO</span>
-                        <p>Comunicar proyectos de arquitectura e ingeniería comercial con material visual limitado y una
-                            presencia inicial pequeña.</p>
-                    </article>
-                    <article><span>02 / MI PARTICIPACIÓN</span>
-                        <p>Aplicación de la identidad existente a Instagram, planificación colaborativa, diseño,
-                            edición, redacción y publicación.</p>
-                    </article>
-                    <article><span>03 / LA SOLUCIÓN</span>
-                        <p>Organicé la comunicación alrededor de proyectos realizados y contenidos que explican el
-                            trabajo técnico de la empresa.</p>
-                    </article>
-                    <article><span>04 / RESULTADOS Y APRENDIZAJES</span>
-                        <p>La producción mensual pasó de 6 a 12 piezas; la cuenta creció aproximadamente de 30 a 104
+                <h2>Resultados y aprendizajes</h2>
+                <dl>
+                    <div><dt>Seguidores orgánicos en noviembre de 2026</dt><dd><span data-count="104" aria-hidden="true">104</span><span class="project-stat-text">104</span></dd></div>
+                    <div><dt>Piezas producidas por mes</dt><dd><span data-count="12" aria-hidden="true">12</span><span class="project-stat-text">12</span></dd></div>
+                </dl>
+                <p>La producción mensual pasó de 6 a 12 piezas; la cuenta creció aproximadamente de 30 a 104
                             seguidores orgánicos hasta noviembre de 2026.</p>
-                    </article>
-                    <article><span>05 / PRÓXIMA ETAPA</span>
-                        <p>Consolidar la estrategia y ampliar recursos visuales para documentar proyectos.</p>
-                    </article>
-                </div>
             </div>
         </section>
-        <section class="pj-case-gallery">
-            <div class="container">
-                <p class="pj-eyebrow">EL PROYECTO EN IMÁGENES</p>
-                <div class="pj-gallery-grid">
-                    <div class="pj-gallery-placeholder">IMAGEN / CAPTURA / REEL 01</div>
-                    <div class="pj-gallery-placeholder">IMAGEN / CAPTURA / REEL 02</div>
-                </div>
+        <section class="project-chapter" id="desafio">
+            <div class="container project-chapter-grid">
+                <h2>El desafío</h2>
+                <div><p>Comunicar proyectos de arquitectura e ingeniería comercial con material visual limitado y una
+                            presencia inicial pequeña.</p></div>
             </div>
         </section>
-        <section class="pj-case-gallery">
-            <div class="container">
-                <p class="pj-eyebrow">EL PROYECTO EN IMÁGENES</p>
-                <div class="pj-gallery-grid">
-                    <div class="pj-gallery-placeholder">IMAGEN / CAPTURA / REEL 01</div>
-                    <div class="pj-gallery-placeholder">IMAGEN / CAPTURA / REEL 02</div>
-                </div>
+        <section class="project-chapter" id="mi-aporte">
+            <div class="container project-chapter-grid">
+                <h2>Mi participación</h2>
+                <div><p>Aplicación de la identidad existente a Instagram, planificación colaborativa, diseño,
+                            edición, redacción y publicación.</p></div>
+            </div>
+        </section>
+        <section class="project-chapter" id="solucion">
+            <div class="container project-chapter-grid">
+                <h2>La solución</h2>
+                <div><p>Organicé la comunicación alrededor de proyectos realizados y contenidos que explican el
+                            trabajo técnico de la empresa.</p></div>
+            </div>
+        </section>
+        <section class="project-chapter" id="proxima-etapa">
+            <div class="container project-chapter-grid">
+                <h2>Próxima etapa</h2>
+                <div><p>Consolidar la estrategia y ampliar recursos visuales para documentar proyectos.</p></div>
             </div>
         </section>
         <section class="pj-next">
@@ -129,6 +118,7 @@
         </div>
     </footer>
     <script defer="" src="../../js/main.js"></script>
+    <script src="../../js/casos-proyectos.js" defer></script>
 </body>
 
 </html>

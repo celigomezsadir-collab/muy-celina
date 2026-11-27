@@ -1,0 +1,217 @@
+.project-case {
+    --project-section-space: clamp(1.5rem, 3.4vw, 3rem);
+    --project-title-gap: .35em;
+    --project-grid:
+        linear-gradient(#8500240c 1px, transparent 1px),
+        linear-gradient(90deg, #8500240c 1px, transparent 1px);
+}
+
+.project-case .pj-case-hero {
+    padding-block: clamp(2rem, 4.5vw, 4.25rem);
+}
+
+.project-case:not(.alem-case) .pj-case-hero {
+    background: var(--paper) var(--project-grid);
+    background-size: 25px 25px;
+    color: var(--burgundy);
+}
+
+.project-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .95fr);
+    gap: clamp(1.5rem, 5vw, 4rem);
+    align-items: center;
+}
+
+.project-hero-grid .pj-back {
+    margin-top: 0;
+}
+
+.project-case .project-hero-grid .pj-eyebrow {
+    color: var(--burgundy);
+    margin: 1rem 0 .65rem;
+}
+
+.project-case .project-hero-grid h1 {
+    margin: 0 0 .28em;
+    font-size: clamp(2.5rem, 5.3vw, 5.75rem);
+    overflow-wrap: anywhere;
+}
+
+.project-hero-grid .pj-case-hero__intro {
+    font-size: clamp(1rem, 1.8vw, 1.22rem);
+}
+
+.project-cover {
+    position: relative;
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid var(--burgundy);
+    border-radius: 44% 44% 10% 10% / 58% 58% 16% 16%;
+    background: var(--pink);
+}
+
+.project-cover figure {
+    margin: 0;
+    padding: .5rem .5rem 1rem;
+    border: 1px solid var(--burgundy);
+    background: var(--paper);
+    box-shadow: 4px 5px 0 var(--burgundy);
+    rotate: -3deg;
+}
+
+.project-cover figure img {
+    display: block;
+    width: 100%;
+    max-height: 24rem;
+    object-fit: contain;
+}
+
+.project-sticker {
+    position: absolute;
+    width: clamp(3.75rem, 16%, 6rem);
+    right: 1%;
+    bottom: 1%;
+    rotate: 9deg;
+}
+
+.project-index-band {
+    border-block: 1px solid var(--burgundy);
+    background: var(--pink);
+}
+
+.project-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .15rem 1rem;
+    padding-block: .55rem;
+}
+
+.project-index a {
+    padding: .38rem .2rem;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.project-index a:hover {
+    text-decoration: underline;
+}
+
+.project-facts {
+    padding-block: 1.2rem;
+    background: var(--paper);
+}
+
+.project-facts .pj-case-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+    gap: .65rem;
+    margin: 0;
+}
+
+.project-facts .pj-case-facts > div {
+    min-width: 0;
+    padding: .85rem 1.1rem;
+    border-radius: var(--card-radius);
+    background: var(--cream);
+    color: var(--burgundy);
+}
+
+.project-facts .pj-case-facts small,
+.project-facts .pj-case-facts strong {
+    display: block;
+    color: inherit;
+}
+
+.project-chapter {
+    padding-block: var(--project-section-space);
+    scroll-margin-top: 6rem;
+}
+
+.project-chapter:nth-of-type(even) {
+    background: var(--pink);
+}
+
+.project-chapter:nth-of-type(3) {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.project-chapter-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+    align-items: start;
+    gap: clamp(.55rem, 2.5vw, 2.5rem);
+}
+
+.project-chapter h2 {
+    margin: 0;
+    font: 400 clamp(1.8rem, 3.7vw, 3.3rem)/1.06 var(--serif);
+}
+
+.project-chapter p {
+    margin: 0;
+    max-width: 65ch;
+}
+
+.project-chapter p + p {
+    margin-top: .65rem;
+}
+
+.project-case .pj-next {
+    padding-block: var(--project-section-space);
+}
+
+@media (max-width: 760px) {
+    .project-hero-grid,
+    .project-chapter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-cover {
+        width: min(100%, 32rem);
+        margin-inline: auto;
+    }
+}
+
+.project-case .project-results {
+    background: var(--paper);
+}
+
+.project-results dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+    gap: .75rem;
+    margin: 1rem 0;
+}
+
+.project-results dl div {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .25rem;
+}
+
+.project-results dd {
+    margin: 0;
+    font: 400 clamp(2rem, 5vw, 4.2rem)/1.1 var(--serif);
+    font-variant-numeric: tabular-nums;
+}
+
+.project-stat-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.project-results h2 {
+    margin-bottom: var(--project-title-gap);
+}
+
+.gallery-item > figcaption {
+    padding: .6rem .75rem;
+    text-align: left;
+    font-weight: 600;
+}

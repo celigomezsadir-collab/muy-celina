@@ -1,0 +1,101 @@
+.san-case .project-chapter h2 {
+    margin-bottom: .35em;
+}
+
+.san-case .san-story,
+.san-case .san-production {
+    background: var(--cream);
+    color: var(--burgundy);
+}
+
+.san-case .san-showcase {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+.san-showcase,
+.san-production {
+    text-align: center;
+}
+
+.san-showcase p,
+.san-production p {
+    margin-inline: auto;
+}
+
+.san-strip {
+    display: grid;
+    grid-auto-columns: clamp(12rem, 25vw, 17rem);
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 1.2rem;
+    padding: .35rem .35rem .8rem;
+}
+
+.san-showcase .san-strip {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.san-case figure {
+    margin: 0;
+}
+
+.san-strip figure,
+.san-christmas figure {
+    color: var(--burgundy);
+    text-align: left;
+    scroll-snap-align: start;
+}
+
+.san-showcase .san-strip {
+    align-items: start;
+}
+
+.san-showcase .san-feed img {
+    aspect-ratio: auto;
+}
+
+.san-strip :is(img, video),
+.san-christmas figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    background: var(--cream);
+}
+
+.san-case .san-christmas {
+    background: var(--pink);
+}
+
+.san-christmas .project-chapter-grid {
+    align-items: center;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+}
+
+.san-christmas .button {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.san-christmas figure {
+    width: min(100%, 23rem);
+    justify-self: center;
+    box-shadow: 4px 4px 0 var(--burgundy);
+}
+
+.san-christmas figure img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+@media (max-width: 760px) {
+    .san-christmas .project-chapter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
