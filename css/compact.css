@@ -226,3 +226,12 @@
     padding: 55px 0;
   }
 }
+
+/* Espaciado general de las secciones y títulos */
+main > section {
+    padding-block: var(--section-space) !important;
+}
+
+main h2 {
+    margin-block: 0 var(--h2-space) !important;
+}
