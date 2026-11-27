@@ -1,0 +1,408 @@
+.alem-case {
+    --alem-accent: var(--burgundy, #850024);
+    --alem-tint: #faedf0;
+}
+
+.alem-case .alem-lead {
+    font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+    font-weight: 600;
+    margin-block: 1rem;
+}
+
+.alem-index,
+.alem-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin-top: 1.3rem;
+}
+
+.alem-index a,
+.alem-controls button,
+.alem-play {
+    padding: .5rem .85rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    color: var(--alem-accent);
+    background: #fff;
+    font: inherit;
+}
+
+.alem-controls button,
+.alem-play {
+    cursor: pointer;
+}
+
+.alem-section {
+    padding-block: clamp(2.8rem, 7vw, 6rem);
+    scroll-margin-top: 6rem;
+}
+
+.alem-tint {
+    background: var(--alem-tint);
+}
+
+.alem-center {
+    text-align: center;
+}
+
+.alem-section h2 {
+    font-size: clamp(2.25rem, 5vw, 4.25rem);
+    line-height: 1.05;
+    margin-bottom: .65em;
+}
+
+.alem-section p {
+    max-width: 62ch;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.alem-center p {
+    margin-inline: auto;
+}
+
+.alem-split,
+.alem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 4vw, 3rem);
+}
+
+.alem-split {
+    align-items: center;
+}
+
+.alem-grid {
+    margin-top: 1.5rem;
+}
+
+.alem-grid article,
+.alem-dashboard {
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid #85002430;
+    border-radius: 1.1rem;
+}
+
+.alem-grid article > img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border-radius: .6rem;
+    margin-bottom: 1rem;
+}
+
+.alem-grid article a {
+    text-decoration: underline;
+}
+
+.alem-center .alem-gallery {
+    margin-top: 2rem;
+}
+
+.alem-track {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: .5rem;
+}
+
+.alem-case figure {
+    position: relative;
+    margin: 0;
+}
+
+.alem-track figure {
+    flex: 0 0 clamp(12rem, 25vw, 18rem);
+    scroll-snap-align: start;
+}
+
+#eventos .alem-track figure {
+    flex-basis: 100%;
+}
+
+.alem-case figure :is(video, img) {
+    width: 100%;
+    display: block;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    background: #27171c;
+    border-radius: .75rem;
+}
+
+#eventos figure :is(video, img),
+#campanas video {
+    aspect-ratio: 4 / 3;
+}
+
+.alem-case figcaption {
+    padding: .4rem 0;
+}
+
+.alem-play {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.alem-center .alem-controls {
+    justify-content: center;
+}
+
+.alem-dashboard {
+    list-style: none;
+    background: #fff;
+}
+
+.alem-dashboard li + li {
+    border-top: 1px solid #85002430;
+    margin-top: .8rem;
+    padding-top: .8rem;
+}
+
+.alem-dashboard span {
+    display: block;
+}
+
+@media (max-width: 680px) {
+    .alem-grid,
+    .alem-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dirección editorial del caso Alem */
+.alem-case .pj-case-hero {
+    padding-block: clamp(3rem, 7vw, 7rem);
+    background-color: var(--paper);
+    color: var(--burgundy);
+    background-image:
+        linear-gradient(#8500240c 1px, transparent 1px),
+        linear-gradient(90deg, #8500240c 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+.alem-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(1.5rem, 5vw, 5rem);
+}
+
+.alem-case .pj-case-hero h1 {
+    max-width: 9ch;
+    font: 400 clamp(3rem, 6.9vw, 7rem)/.96 var(--serif);
+    letter-spacing: -.045em;
+}
+
+.alem-case .pj-case-hero h1 em {
+    display: table;
+    padding: 0 .14em .07em;
+    margin-top: .09em;
+    background: linear-gradient(transparent 45%, var(--pink) 45% 91%, transparent 91%);
+}
+
+.alem-case .pj-case-hero__intro {
+    font-size: 1rem;
+}
+
+.alem-collage {
+    position: relative;
+    isolation: isolate;
+    aspect-ratio: 1.18;
+    background: var(--pink);
+    border: 1px solid var(--burgundy);
+    border-radius: 48% 48% 12% 12% / 55% 55% 16% 16%;
+}
+
+.alem-collage figure {
+    position: absolute;
+    padding: .45rem .45rem 1.15rem;
+    background: var(--paper);
+    border: 1px solid var(--burgundy);
+    box-shadow: 3px 4px 0 #85002445;
+}
+
+.alem-collage figure img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.alem-collage figure:nth-child(1) {
+    width: 57%;
+    left: 4%;
+    top: 18%;
+    rotate: -10deg;
+}
+
+.alem-collage figure:nth-child(2) {
+    width: 57%;
+    left: 11%;
+    bottom: 7%;
+    rotate: 7deg;
+}
+
+.alem-collage figure:nth-child(3) {
+    width: 33%;
+    right: 4%;
+    top: 16%;
+    rotate: 12deg;
+}
+
+.alem-collage figure:nth-child(3) img {
+    aspect-ratio: 3 / 5;
+}
+
+.alem-stamp {
+    position: absolute;
+    width: 23%;
+    right: 2%;
+    bottom: 4%;
+    rotate: -12deg;
+}
+
+.alem-index-band {
+    padding-block: .7rem;
+    background: var(--pink);
+    border-block: 1px solid var(--burgundy);
+}
+
+.alem-index {
+    justify-content: center;
+    margin: 0;
+    gap: .2rem .55rem;
+}
+
+.alem-index a {
+    background: transparent;
+    border-color: transparent;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.alem-index a:hover,
+.alem-index a:focus-visible {
+    border-color: currentColor;
+}
+
+.alem-section h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+}
+
+#contenidos,
+#gestion {
+    background: var(--burgundy);
+    color: var(--paper);
+}
+
+#contenidos .alem-track {
+    padding: .35rem .25rem .8rem;
+}
+
+#contenidos figure {
+    background: var(--paper);
+    color: var(--burgundy);
+    padding: .45rem;
+    border-radius: 1rem;
+}
+
+#contenidos figure:nth-child(even) {
+    background: var(--pink);
+}
+
+#contenidos figcaption {
+    min-height: 2.5em;
+    text-align: left;
+    padding-inline: .4rem;
+    font-weight: 600;
+}
+
+.alem-play {
+    border: 1px solid var(--burgundy);
+    box-shadow: 2px 2px 0 var(--burgundy);
+    background: var(--pink);
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+#eventos,
+#web {
+    background: var(--pink);
+}
+
+#eventos .alem-gallery {
+    margin: .45rem;
+    padding: clamp(.8rem, 2vw, 1.5rem);
+    background: var(--paper);
+    border: 1px solid var(--burgundy);
+    box-shadow: 6px 6px 0 var(--burgundy);
+}
+
+#eventos .alem-track {
+    gap: 0;
+}
+
+#eventos figure :is(img, video) {
+    aspect-ratio: 4 / 3;
+}
+
+#eventos figure img {
+    object-fit: cover;
+}
+
+#eventos figcaption {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+}
+
+#alianzas,
+#ecommerce {
+    background: var(--cream);
+}
+
+.alem-grid article {
+    background: var(--paper);
+    border: 1px solid var(--burgundy);
+    box-shadow: 3px 3px 0 var(--burgundy);
+}
+
+#campanas article:first-child,
+#canales article:last-child {
+    background: var(--pink);
+}
+
+.alem-grid h3 {
+    margin-bottom: .65rem;
+    font: 400 clamp(1.5rem, 3vw, 2rem)/1.15 var(--serif);
+}
+
+.alem-dashboard {
+    background: var(--paper);
+    color: var(--burgundy);
+    box-shadow: 6px 6px 0 var(--pink);
+}
+
+@media (max-width: 760px) {
+    .alem-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .alem-collage {
+        width: min(100%, 30rem);
+        margin-inline: auto;
+    }
+}
+
+.alem-case .pj-case-hero .pj-eyebrow {
+    color: var(--burgundy);
+    margin: 1.2rem 0 .85rem;
+}
+
+.alem-hero-copy .pj-back {
+    margin-top: 0;
+}
