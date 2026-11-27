@@ -23,7 +23,7 @@
     --paper: #fff8f1;
     --ink: #850024;
     --section-space: clamp(1.25rem, 2.8vw, 2.5rem);
-    --h2-space: .3em;
+    --h2-space: .8em;
     --serif: Recoleta, Georgia, 'Times New Roman', serif;
     --sans: Inter, Arial, sans-serif;
 }
