@@ -406,3 +406,41 @@
 .alem-hero-copy .pj-back {
     margin-top: 0;
 }
+.alem-resource {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 1.15rem;
+}
+
+.alem-resource__link {
+    display: inline-block;
+    padding: .7rem 1.1rem;
+    border: 1px solid var(--paper);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--burgundy);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.alem-resource__link:hover {
+    background: var(--pink);
+}
+
+.alem-resource__link:focus-visible {
+    outline: 2px solid var(--pink);
+    outline-offset: 4px;
+}
+
+.alem-resource__sticker {
+    display: inline-block;
+    padding: .3rem .6rem;
+    border-radius: .35rem;
+    background: var(--pink);
+    color: var(--burgundy);
+    font-size: .875rem;
+    font-weight: 700;
+    transform: rotate(-5deg);
+}
